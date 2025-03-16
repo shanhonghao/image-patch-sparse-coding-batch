@@ -76,7 +76,7 @@ This project demonstrates how to learn a sparse coding dictionary from a batch o
   A file named `data.mat` is included in this repository, containing a set of randomly sampled image patches (with no additional preprocessing). If you simply want to try out the dictionary learning process, you can use `data.mat` directly.
 
 - **Option B: Prepare your own patches**  
-  1. Write or use an existing function to create a NumPy array of shape $(\text{patch\_height} \times \text{patch\_width}, \text{num\_patches})$.  
+  1. Write or use an existing function to create a NumPy array of shape $(\text{patch height} \times \text{patch width}, \text{num patches})$.  
   2. (Optional) **Preprocess** your patches (e.g., remove the DC component, normalize for contrast, etc.) before training.
 
 ### Running the Dictionary Learning
