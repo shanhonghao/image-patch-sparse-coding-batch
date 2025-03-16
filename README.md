@@ -106,7 +106,7 @@ Below is a sample grid showing (A) raw patches extracted from natural images and
 
 **B) Learned Dictionary**
 
-![Alt Text](learned_features.png)
+![Alt Text](learned_features.jpeg)
 
 Typically, these atoms capture edge-like or blob-like structures resembling Gabor filters, consistent with known results in sparse coding of natural images.
 
