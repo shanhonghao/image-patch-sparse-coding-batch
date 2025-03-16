@@ -35,7 +35,7 @@ This project demonstrates how to learn a sparse coding dictionary from a batch o
 1. **Sample random patches** from a set of natural images.
 2. **Initialize** the dictionary (e.g., random Gaussian or other heuristic).
 3. **Alternating Updates**:
-   - **Sparse codes update** (coordinate descent for \(\ell_1\)-regularized minimization).
+   - **Sparse codes update** (coordinate descent for $\ell_1$-regularized minimization).
    - **Dictionary update** (using the approach described by Mairal et al.).
 4. **Visualization**: Display a subset of the sampled image patches and the learned dictionary atoms (or filters).
 
