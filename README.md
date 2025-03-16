@@ -59,16 +59,10 @@ The main goals are:
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/shanhonghao/image-patch-sparse-coding-batch.git
+   cd image-patch-sparse-coding-batch
    ```
-2. (Optional) **Create and activate a virtual environment** to keep dependencies isolated:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Linux/Mac
-   venv\Scripts\activate      # On Windows
-   ```
-3. **Install dependencies** (see above).
+2. **Install dependencies** (see above).
 
 ---
 
