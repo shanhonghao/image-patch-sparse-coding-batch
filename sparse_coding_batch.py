@@ -51,7 +51,7 @@ def sc_l1(X, A, S, sparsity, max_norm2, max_iters, max_inner_iters):
         # -------------------------------
         AtA = A.t() @ A              # Compute A^T * A, shape (M, M)
         diagAtA = torch.diag(AtA).clone()  # Extract diagonal elements
-        AtA = AtA - torch.diag(torch.diag(AtA))  # Zero out diagonal
+        AtA.fill_diagonal_(0.0)      # Zero out diagonal
         
         AtX = A.t() @ X              # Compute A^T * X, shape (M, N)
         
@@ -97,6 +97,7 @@ def sc_l1(X, A, S, sparsity, max_norm2, max_iters, max_inner_iters):
     
     return A, S, E
 
+
 def run_demo():
     """
     Demonstrates sparse coding by loading data, running the sc_l1 algorithm,
@@ -127,6 +128,7 @@ def run_demo():
 
     # Display the learned dictionary features
     display_network(A.cpu())
+
 
 # Example usage:
 if __name__ == "__main__":
