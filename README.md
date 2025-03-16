@@ -3,7 +3,7 @@
 This repository provides an implementation of a **batch learning algorithm** for **sparse coding** on natural image patches. It learns a dictionary of features (or "atoms") that can *sparsely* represent patches of images. Key components include:
 
 1. **Latent signal (sparse codes) updates** using a coordinate descent algorithm:
-   > Li, Y., & Osher, S. (2009). Coordinate descent optimization for \(\ell_1\) minimization with application to compressed sensing; a greedy algorithm. *Inverse Problems and Imaging, 3(3), 487–503*.
+   > Li, Y., & Osher, S. (2009). Coordinate descent optimization for $\ell_1$ minimization with application to compressed sensing; a greedy algorithm. *Inverse Problems and Imaging, 3(3), 487–503*.
 
 2. **Dictionary updates** (with sparse codes and input patches fixed) as described by:
    > Mairal, J., Bach, F., Ponce, J., & Sapiro, G. (2010). Online learning for matrix factorization and sparse coding. *Journal of Machine Learning Research, 11(1)*.
@@ -35,7 +35,7 @@ This project demonstrates how to learn a sparse coding dictionary from a batch o
 1. **Sampling** random patches from one or more natural images.
 2. **Initializing** the dictionary (e.g., random Gaussian or another heuristic).
 3. **Alternating updates** of:
-   - **Sparse codes** (coordinate descent for \(\ell_1\)-regularized minimization).
+   - **Sparse codes** (coordinate descent for $\ell_1$-regularized minimization).
    - **Dictionary** (using the approach described by Mairal et al.).
 4. **Visualization**: Displaying a subset of the sampled patches and the learned dictionary filters.
 
@@ -76,7 +76,7 @@ This project demonstrates how to learn a sparse coding dictionary from a batch o
   A file named `data.mat` is included in this repository, containing a set of randomly sampled image patches (with no additional preprocessing). If you simply want to try out the dictionary learning process, you can use `data.mat` directly.
 
 - **Option B: Prepare your own patches**  
-  1. Write or use an existing function to create a NumPy array of shape \((\text{patch_height} \times \text{patch_width}, \text{num_patches})\).  
+  1. Write or use an existing function to create a NumPy array of shape $(\text{patch_height} \times \text{patch_width}, \text{num_patches})$.  
   2. (Optional) **Preprocess** your patches (e.g., remove the DC component, normalize for contrast, etc.) before training.
 
 ### Running the Dictionary Learning
@@ -122,7 +122,7 @@ These filters typically capture edge-like or blob-like structures, reminiscent o
 ## References
 
 1. **Li & Osher (2009)**  
-   *Coordinate descent optimization for \(\ell_1\) minimization with application to compressed sensing; a greedy algorithm.*  
+   *Coordinate descent optimization for $\ell_1$ minimization with application to compressed sensing; a greedy algorithm.*  
    Y. Li and S. Osher. *Inverse Problems and Imaging, 3(3): 487–503.*
 
 2. **Mairal et al. (2010)**  
