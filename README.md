@@ -92,7 +92,7 @@ This will:
    - **Dictionary update** (Mairal et al., 2010).
 3. Display the learned dictionary using the visualization script.
 
-You can customize hyperparameters (e.g., number of dictionary atoms, learning rate, number of iterations) in the script. 
+You can customize hyperparameters (e.g., number of dictionary atoms, sparsity penalty, number of iterations) in the script. 
 
 ### Visualizing Results
 
@@ -122,12 +122,12 @@ These filters typically capture edge-like or blob-like structures, reminiscent o
 ## References
 
 1. **Li & Osher (2009)**  
-   *Coordinate descent optimization for $\ell_1$ minimization with application to compressed sensing; a greedy algorithm.*  
+   Coordinate descent optimization for $\ell_1$ minimization with application to compressed sensing; a greedy algorithm.
    Y. Li and S. Osher. *Inverse Problems and Imaging, 3(3): 487–503.*
 
 2. **Mairal et al. (2010)**  
-   *Online learning for matrix factorization and sparse coding.*  
-   J. Mairal, F. Bach, J. Ponce, and G. Sapiro. *Journal of Machine Learning Research, 11(1).*
+   Online learning for matrix factorization and sparse coding.*  
+   J. Mairal, F. Bach, J. Ponce, and G. Sapiro. *Journal of Machine Learning Research, 11(1).
 
 3. **Olshausen’s sparsenet**  
    [https://www.rctn.org/bruno/sparsenet/](https://www.rctn.org/bruno/sparsenet/)  
