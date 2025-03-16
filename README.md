@@ -70,36 +70,27 @@ The main goals are:
 
 ### Preparing Image Patches
 
-1. Use your own function to create a NumPy array of shape `(patch_height × patch_width num_patches)`. 
-3. (Optionally) **Preprocess** patches (e.g., normalize, remove DC component, or apply contrast normalization) before learning.
+- **Option A: Use the provided patches**  
+  A file named `data.mat` is included in this repository, containing a set of randomly sampled image patches (no preprocessing has been done on them). If you just want to try out the dictionary learning without creating your own patches, you can use this file directly in the training script (see the next section).
+
+- **Option B: Prepare your own patches**
+1. (Optionally) Use your own function to create a NumPy array of shape `(patch_height × patch_width, num_patches)`. 
+2. (Optionally) **Preprocess** patches (e.g., normalize, remove DC component, or apply contrast normalization) before learning.
 
 ### Running the Dictionary Learning
 
-1. **Update the config file** (e.g., `config.py`) or parameters in the main script (`main.py`) to specify:
-   - The path to your patches file (e.g., `patches.npy`)
-   - Dictionary size (number of atoms)
-   - Sparsity parameters (\(\lambda\), learning rate, etc.)
-   - Number of iterations, batch size, etc.
-2. **Run** the main script:
+**Run** the main script:
    ```bash
-   python main.py
+   python sparse_coding_batch.py
    ```
    This will:
    - Load or initialize the dictionary.
    - Loop through the image patches, performing:
      1. **Sparse coding** with coordinate descent (Li & Osher, 2009).
      2. **Dictionary update** (Mairal et al., 2010).
-   - Save the learned dictionary (e.g., `dictionary.npy`).
+   - Display the learned dictionary.
 
 ### Visualizing Results
-
-After the learning process, you can visualize:
-
-1. **Sample Image Patches**  
-   Run the script (e.g., `visualize_patches.py`) which uses the Python version of `display_network` to plot a grid of randomly selected patches.
-
-2. **Learned Dictionary Atoms**  
-   Similarly, run `visualize_dictionary.py` (or a relevant function in `main.py`) to display the learned filters in a grid.
 
 The visualization functions rely on the reimplemented **display_network** code, which organizes each patch/atom into a row–column layout and rescales intensities for clear display.
 
@@ -136,7 +127,7 @@ Typically, these atoms capture edge-like or blob-like structures resembling Gabo
 ## References
 
 1. **Li & Osher (2009)**  
-   *Coordinate descent optimization for \(\ell_1\) minimization with application to compressed sensing; a greedy algorithm.*  
+   *Coordinate descent optimization for $\ell_1$ minimization with application to compressed sensing; a greedy algorithm.*  
    Y. Li and S. Osher. *Inverse Problems and Imaging, 3(3): 487–503.*
 
 2. **Mairal et al. (2010)**  
@@ -153,14 +144,6 @@ Typically, these atoms capture edge-like or blob-like structures resembling Gabo
 
 - This project is distributed under the MIT License (see [LICENSE](LICENSE) file for details).
 - The original MATLAB `display_network.m` by Bruno Olshausen is referenced and reimplemented in Python here. Please refer to their site and any accompanying license terms.
-
----
-
-## Acknowledgments
-
-- **Bruno Olshausen** for providing the original MATLAB code `display_network.m` in his *sparsenet* package.
-- **Li & Osher** and **Mairal et al.** for their foundational work on sparse coding, dictionary learning, and coordinate descent approaches.
-- [rctn.org](https://www.rctn.org/bruno/) and the broader sparse coding community for inspiration and educational resources.
 
 ---
 
