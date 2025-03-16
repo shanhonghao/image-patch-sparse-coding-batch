@@ -51,14 +51,8 @@ The main goals are:
 - [NumPy](https://numpy.org/)
 - [SciPy](https://scipy.org/)
 - [Matplotlib](https://matplotlib.org/)
-- [scikit-learn](https://scikit-learn.org/) (optional, if needed for additional utility functions)
+- [PyTorch](https://pytorch.org/)
   
-You can install these dependencies via pip:
-
-```bash
-pip install numpy scipy matplotlib scikit-learn
-```
-
 ---
 
 ## Installation
