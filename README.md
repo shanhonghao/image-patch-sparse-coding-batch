@@ -102,9 +102,7 @@ Below is a sample grid showing (A) raw patches extracted from natural images and
 
 **A) Sample Patches**
 
-```
 ![Alt Text](patch_samples.jpeg)
-```
 
 **B) Learned Dictionary**
 
