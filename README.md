@@ -70,8 +70,7 @@ The main goals are:
 
 ### Preparing Image Patches
 
-1. Place your **natural images** (e.g., `.jpg`, `.png`) in a folder, for instance `data/images/`.
-2. Use the provided **patch extraction script** (e.g., `extract_patches.py`) or your own function to create a NumPy array of shape `(num_patches, patch_height, patch_width)`. 
+1. Use your own function to create a NumPy array of shape `(patch_height $\times$ patch_width num_patches)`. 
 3. (Optionally) **Preprocess** patches (e.g., normalize, remove DC component, or apply contrast normalization) before learning.
 
 ### Running the Dictionary Learning
