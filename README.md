@@ -1,5 +1,3 @@
----
-
 # Sparse Coding Dictionary Learning from Natural Image Patches
 
 This repository provides an implementation of a **batch learning algorithm** for **sparse coding** on natural image patches. It learns a dictionary of features (or "atoms") that can *sparsely* represent patches of images. Key components include:
