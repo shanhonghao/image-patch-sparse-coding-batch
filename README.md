@@ -70,7 +70,7 @@ The main goals are:
 
 ### Preparing Image Patches
 
-1. Use your own function to create a NumPy array of shape `(patch_height $\times$ patch_width num_patches)`. 
+1. Use your own function to create a NumPy array of shape `(patch_height × patch_width num_patches)`. 
 3. (Optionally) **Preprocess** patches (e.g., normalize, remove DC component, or apply contrast normalization) before learning.
 
 ### Running the Dictionary Learning
