@@ -3,7 +3,7 @@
 This repository contains an implementation of a batch learning algorithm for **sparse coding** on natural image patches. It learns a dictionary of features that can sparsely represent patches of images. The code includes:
 
 1. **Latent signal (sparse codes) updates** using a coordinate descent approach:
-   > Li, Y., & Osher, S. (2009). Coordinate descent optimization for \( \ell_1 \) minimization with application to compressed sensing; a greedy algorithm. *Inverse Problems and Imaging, 3(3), 487-503*.
+   > Li, Y., & Osher, S. (2009). Coordinate descent optimization for $L_1$ minimization with application to compressed sensing; a greedy algorithm. *Inverse Problems and Imaging, 3(3), 487-503*.
 
 2. **Dictionary updates** (when the sparse codes and input patches are fixed) based on:
    > Mairal, J., Bach, F., Ponce, J., & Sapiro, G. (2010). Online learning for matrix factorization and sparse coding. *Journal of Machine Learning Research, 11(1)*.
