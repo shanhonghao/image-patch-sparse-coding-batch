@@ -32,7 +32,7 @@ Additionally, it includes a Python reimplementation of the MATLAB function [`dis
 
 This project demonstrates how to learn a sparse coding dictionary from a batch of natural image patches. The pipeline follows these steps:
 
-1. **Sample random patches** from a set of natural images.
+1. **Sample random batch of patches** from a set of natural images.
 2. **Initialize** the dictionary (e.g., random Gaussian or other heuristic).
 3. **Alternating Updates**:
    - **Sparse codes update** (coordinate descent for $\ell_1$-regularized minimization).
@@ -84,8 +84,8 @@ The main goals are:
    python sparse_coding_batch.py
    ```
    This will:
-   - Load or initialize the dictionary.
-   - Loop through the image patches, performing:
+   - Initialize the dictionary.
+   - Iteratively perform:
      1. **Sparse coding** with coordinate descent (Li & Osher, 2009).
      2. **Dictionary update** (Mairal et al., 2010).
    - Display the learned dictionary.
@@ -103,11 +103,7 @@ Below is a sample grid showing (A) raw patches extracted from natural images and
 **A) Sample Patches**
 
 ```
-   +----------------+ +----------------+ ... +----------------+
-   |                | |                |     |                |
-   |    Patch 1     | |    Patch 2     | ... |    Patch N     |
-   |                | |                |     |                |
-   +----------------+ +----------------+ ... +----------------+
+![Alt Text](patch_samples.jpeg)
 ```
 
 **B) Learned Dictionary**
