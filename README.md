@@ -111,6 +111,8 @@ Below is a sample grid displaying (A) the random patches extracted from natural 
 
 ![A set of random patches](patch_samples.jpeg)
 
+<img src="patch_samples.jpeg" alt="A set of random patches" width="300" />
+
 **B) Learned Dictionary**
 
 ![A set of learned atoms/filters](learned_features.jpeg)
