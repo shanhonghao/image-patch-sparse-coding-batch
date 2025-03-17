@@ -113,7 +113,7 @@ Below is a sample grid displaying (A) the random patches extracted from natural 
 
 **B) Learned Dictionary**
 
-![A set of learned atoms/filters](learned_features.jpeg)
+<img src="learned_features.jpeg" alt="A set of learned atoms/filters" width="600" />
 
 These filters typically capture edge-like or blob-like structures, reminiscent of Gabor filters, which is consistent with well-known results in sparse coding of natural images.
 
